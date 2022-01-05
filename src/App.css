@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+
+  --light-grayish-blue: hsl(240, 5%, 91%);
+
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+
+  --font-size: 12px;
+  --font-bold: 700;
+  --font-regular: 400;
+
+  --background-gradient: linear-gradient(
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+
+  --text-color: var(--Very-dark-desaturated-blue);
+
+  --hover-color: var(--soft-red);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background-gradient);
+  color: var(--text-color);
+  font-size: 14px;
+  position: relative;
+  font-family: "Kumbh Sans";
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: var(--font-size) * 3;
+  margin: 2em auto 1em;
+  text-align: center;
+}
+
+hr {
+  color: var(--light-grayish-blue);
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.container {
+  background-color: white;
+  border-radius: 2rem;
+  min-height: 90vh;
+  margin: 20rem 1rem;
+}
+
+.background-pattern {
+  width: 70%;
+  position: absolute;
+  top: -28%;
+  right: 0;
+  transform: translateX(-25%);
+}
+
+.woman-desktop {
+  position: absolute;
+  top: -12%;
+  left: 12%;
+  width: 70%;
+}
+
+.box-svg {
+  margin-top: -20%;
+  z-index: 1;
+}
+
+.faq-sec {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.questions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.p-questions {
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.p-questions:hover {
+  color: var(--hover-color);
+}
+
+.p-ans {
+  margin: 0.4rem 0;
+  line-height: 1rem;
+  font-size: var(--font-size);
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    text-align: left;
+  }
+
+  .container {
+    position: relative;
+    overflow: hidden;
+    margin: 7.5rem 15rem;
+    min-height: 70vh;
+  }
+
+  .flex-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+  }
+
+  .background-pattern {
+    margin: 0;
+    width: 80%;
+    min-height: 50vh;
+    position: absolute;
+    left: -20%;
+    top: -35%;
+  }
+
+  .woman-desktop {
+    width: auto;
+    position: absolute;
+    left: -10%;
+    top: 5%;
+  }
+
+  .box-svg {
+    position: fixed;
+    margin-top: 11%;
+    margin-left: -8.4%;
+  }
+}
