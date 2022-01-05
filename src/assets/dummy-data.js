@@ -17,11 +17,11 @@ export const data = [
   {
     id: 4,
     ques: "Can i cancel my subscription?",
-    ans: "Yes you can.",
+    ans: "Yes you can Cancel the subscription",
   },
   {
     id: 5,
     ques: "Do you provide Additional Support",
-    ans: "Yep we do!.",
+    ans: "Yep we do!. Provide Additional Support",
   },
 ];
